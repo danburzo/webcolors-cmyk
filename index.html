@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A cool thing to do is convert the CSS Named Colors to CMYK and back</title>
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="data/css/webcolors.css">
+	<link rel="stylesheet" type="text/css" href="data/css/index.css">
+</head>
+<body>
+
+	<header>
+		<h1>A cool thing to do is convert the CSS Named Colors to CMYK and back. <a href='https://github.com/danburzo/webcolors-cmyk'>On GitHub.</a></h1>
+		<form class='modes'>
+			<label><input type='radio' name='mode' value='rgb' checked/> RGB</label>
+			<label><input type='radio' name='mode' value='web-coated'/> Web Coated</label>
+			<label><input type='radio' name='mode' value='web-uncoated'/> Web Uncoated</label>
+			<label><input type='radio' name='mode' value='fogra-coated'/> FOGRA Coated</label>
+			<label><input type='radio' name='mode' value='fogra-uncoated'/> FOGRA Uncoated</label>
+		</form>
+	</header>
+
+	<div class='rgb' id='mode'>
+		<ul class='colors'>
+			
+				<li>
+					<span class='color AliceBlue'></span>
+					<span class='name'>AliceBlue</span>
+				</li>
+			
+				<li>
+					<span class='color AntiqueWhite'></span>
+					<span class='name'>AntiqueWhite</span>
+				</li>
+			
+				<li>
+					<span class='color Aqua'></span>
+					<span class='name'>Aqua</span>
+				</li>
+			
+				<li>
+					<span class='color Aquamarine'></span>
+					<span class='name'>Aquamarine</span>
+				</li>
+			
+				<li>
+					<span class='color Azure'></span>
+					<span class='name'>Azure</span>
+				</li>
+			
+				<li>
+					<span class='color Beige'></span>
+					<span class='name'>Beige</span>
+				</li>
+			
+				<li>
+					<span class='color Bisque'></span>
+					<span class='name'>Bisque</span>
+				</li>
+			
+				<li>
+					<span class='color Black'></span>
+					<span class='name'>Black</span>
+				</li>
+			
+				<li>
+					<span class='color BlanchedAlmond'></span>
+					<span class='name'>BlanchedAlmond</span>
+				</li>
+			
+				<li>
+					<span class='color Blue'></span>
+					<span class='name'>Blue</span>
+				</li>
+			
+				<li>
+					<span class='color BlueViolet'></span>
+					<span class='name'>BlueViolet</span>
+				</li>
+			
+				<li>
+					<span class='color Brown'></span>
+					<span class='name'>Brown</span>
+				</li>
+			
+				<li>
+					<span class='color BurlyWood'></span>
+					<span class='name'>BurlyWood</span>
+				</li>
+			
+				<li>
+					<span class='color CadetBlue'></span>
+					<span class='name'>CadetBlue</span>
+				</li>
+			
+				<li>
+					<span class='color Chartreuse'></span>
+					<span class='name'>Chartreuse</span>
+				</li>
+			
+				<li>
+					<span class='color Chocolate'></span>
+					<span class='name'>Chocolate</span>
+				</li>
+			
+				<li>
+					<span class='color Coral'></span>
+					<span class='name'>Coral</span>
+				</li>
+			
+				<li>
+					<span class='color CornflowerBlue'></span>
+					<span class='name'>CornflowerBlue</span>
+				</li>
+			
+				<li>
+					<span class='color Cornsilk'></span>
+					<span class='name'>Cornsilk</span>
+				</li>
+			
+				<li>
+					<span class='color Crimson'></span>
+					<span class='name'>Crimson</span>
+				</li>
+			
+				<li>
+					<span class='color Cyan'></span>
+					<span class='name'>Cyan</span>
+				</li>
+			
+				<li>
+					<span class='color DarkBlue'></span>
+					<span class='name'>DarkBlue</span>
+				</li>
+			
+				<li>
+					<span class='color DarkCyan'></span>
+					<span class='name'>DarkCyan</span>
+				</li>
+			
+				<li>
+					<span class='color DarkGoldenRod'></span>
+					<span class='name'>DarkGoldenRod</span>
+				</li>
+			
+				<li>
+					<span class='color DarkGray'></span>
+					<span class='name'>DarkGray</span>
+				</li>
+			
+				<li>
+					<span class='color DarkGreen'></span>
+					<span class='name'>DarkGreen</span>
+				</li>
+			
+				<li>
+					<span class='color DarkKhaki'></span>
+					<span class='name'>DarkKhaki</span>
+				</li>
+			
+				<li>
+					<span class='color DarkMagenta'></span>
+					<span class='name'>DarkMagenta</span>
+				</li>
+			
+				<li>
+					<span class='color DarkOliveGreen'></span>
+					<span class='name'>DarkOliveGreen</span>
+				</li>
+			
+				<li>
+					<span class='color DarkOrange'></span>
+					<span class='name'>DarkOrange</span>
+				</li>
+			
+				<li>
+					<span class='color DarkOrchid'></span>
+					<span class='name'>DarkOrchid</span>
+				</li>
+			
+				<li>
+					<span class='color DarkRed'></span>
+					<span class='name'>DarkRed</span>
+				</li>
+			
+				<li>
+					<span class='color DarkSalmon'></span>
+					<span class='name'>DarkSalmon</span>
+				</li>
+			
+				<li>
+					<span class='color DarkSeaGreen'></span>
+					<span class='name'>DarkSeaGreen</span>
+				</li>
+			
+				<li>
+					<span class='color DarkSlateBlue'></span>
+					<span class='name'>DarkSlateBlue</span>
+				</li>
+			
+				<li>
+					<span class='color DarkSlateGray'></span>
+					<span class='name'>DarkSlateGray</span>
+				</li>
+			
+				<li>
+					<span class='color DarkTurquoise'></span>
+					<span class='name'>DarkTurquoise</span>
+				</li>
+			
+				<li>
+					<span class='color DarkViolet'></span>
+					<span class='name'>DarkViolet</span>
+				</li>
+			
+				<li>
+					<span class='color DeepPink'></span>
+					<span class='name'>DeepPink</span>
+				</li>
+			
+				<li>
+					<span class='color DeepSkyBlue'></span>
+					<span class='name'>DeepSkyBlue</span>
+				</li>
+			
+				<li>
+					<span class='color DimGray'></span>
+					<span class='name'>DimGray</span>
+				</li>
+			
+				<li>
+					<span class='color DodgerBlue'></span>
+					<span class='name'>DodgerBlue</span>
+				</li>
+			
+				<li>
+					<span class='color FireBrick'></span>
+					<span class='name'>FireBrick</span>
+				</li>
+			
+				<li>
+					<span class='color FloralWhite'></span>
+					<span class='name'>FloralWhite</span>
+				</li>
+			
+				<li>
+					<span class='color ForestGreen'></span>
+					<span class='name'>ForestGreen</span>
+				</li>
+			
+				<li>
+					<span class='color Fuchsia'></span>
+					<span class='name'>Fuchsia</span>
+				</li>
+			
+				<li>
+					<span class='color Gainsboro'></span>
+					<span class='name'>Gainsboro</span>
+				</li>
+			
+				<li>
+					<span class='color GhostWhite'></span>
+					<span class='name'>GhostWhite</span>
+				</li>
+			
+				<li>
+					<span class='color Gold'></span>
+					<span class='name'>Gold</span>
+				</li>
+			
+				<li>
+					<span class='color GoldenRod'></span>
+					<span class='name'>GoldenRod</span>
+				</li>
+			
+				<li>
+					<span class='color Gray'></span>
+					<span class='name'>Gray</span>
+				</li>
+			
+				<li>
+					<span class='color Green'></span>
+					<span class='name'>Green</span>
+				</li>
+			
+				<li>
+					<span class='color GreenYellow'></span>
+					<span class='name'>GreenYellow</span>
+				</li>
+			
+				<li>
+					<span class='color HoneyDew'></span>
+					<span class='name'>HoneyDew</span>
+				</li>
+			
+				<li>
+					<span class='color HotPink'></span>
+					<span class='name'>HotPink</span>
+				</li>
+			
+				<li>
+					<span class='color IndianRed '></span>
+					<span class='name'>IndianRed </span>
+				</li>
+			
+				<li>
+					<span class='color Indigo '></span>
+					<span class='name'>Indigo </span>
+				</li>
+			
+				<li>
+					<span class='color Ivory'></span>
+					<span class='name'>Ivory</span>
+				</li>
+			
+				<li>
+					<span class='color Khaki'></span>
+					<span class='name'>Khaki</span>
+				</li>
+			
+				<li>
+					<span class='color Lavender'></span>
+					<span class='name'>Lavender</span>
+				</li>
+			
+				<li>
+					<span class='color LavenderBlush'></span>
+					<span class='name'>LavenderBlush</span>
+				</li>
+			
+				<li>
+					<span class='color LawnGreen'></span>
+					<span class='name'>LawnGreen</span>
+				</li>
+			
+				<li>
+					<span class='color LemonChiffon'></span>
+					<span class='name'>LemonChiffon</span>
+				</li>
+			
+				<li>
+					<span class='color LightBlue'></span>
+					<span class='name'>LightBlue</span>
+				</li>
+			
+				<li>
+					<span class='color LightCoral'></span>
+					<span class='name'>LightCoral</span>
+				</li>
+			
+				<li>
+					<span class='color LightCyan'></span>
+					<span class='name'>LightCyan</span>
+				</li>
+			
+				<li>
+					<span class='color LightGoldenRodYellow'></span>
+					<span class='name'>LightGoldenRodYellow</span>
+				</li>
+			
+				<li>
+					<span class='color LightGray'></span>
+					<span class='name'>LightGray</span>
+				</li>
+			
+				<li>
+					<span class='color LightGreen'></span>
+					<span class='name'>LightGreen</span>
+				</li>
+			
+				<li>
+					<span class='color LightPink'></span>
+					<span class='name'>LightPink</span>
+				</li>
+			
+				<li>
+					<span class='color LightSalmon'></span>
+					<span class='name'>LightSalmon</span>
+				</li>
+			
+				<li>
+					<span class='color LightSeaGreen'></span>
+					<span class='name'>LightSeaGreen</span>
+				</li>
+			
+				<li>
+					<span class='color LightSkyBlue'></span>
+					<span class='name'>LightSkyBlue</span>
+				</li>
+			
+				<li>
+					<span class='color LightSlateGray'></span>
+					<span class='name'>LightSlateGray</span>
+				</li>
+			
+				<li>
+					<span class='color LightSteelBlue'></span>
+					<span class='name'>LightSteelBlue</span>
+				</li>
+			
+				<li>
+					<span class='color LightYellow'></span>
+					<span class='name'>LightYellow</span>
+				</li>
+			
+				<li>
+					<span class='color Lime'></span>
+					<span class='name'>Lime</span>
+				</li>
+			
+				<li>
+					<span class='color LimeGreen'></span>
+					<span class='name'>LimeGreen</span>
+				</li>
+			
+				<li>
+					<span class='color Linen'></span>
+					<span class='name'>Linen</span>
+				</li>
+			
+				<li>
+					<span class='color Magenta'></span>
+					<span class='name'>Magenta</span>
+				</li>
+			
+				<li>
+					<span class='color Maroon'></span>
+					<span class='name'>Maroon</span>
+				</li>
+			
+				<li>
+					<span class='color MediumAquaMarine'></span>
+					<span class='name'>MediumAquaMarine</span>
+				</li>
+			
+				<li>
+					<span class='color MediumBlue'></span>
+					<span class='name'>MediumBlue</span>
+				</li>
+			
+				<li>
+					<span class='color MediumOrchid'></span>
+					<span class='name'>MediumOrchid</span>
+				</li>
+			
+				<li>
+					<span class='color MediumPurple'></span>
+					<span class='name'>MediumPurple</span>
+				</li>
+			
+				<li>
+					<span class='color MediumSeaGreen'></span>
+					<span class='name'>MediumSeaGreen</span>
+				</li>
+			
+				<li>
+					<span class='color MediumSlateBlue'></span>
+					<span class='name'>MediumSlateBlue</span>
+				</li>
+			
+				<li>
+					<span class='color MediumSpringGreen'></span>
+					<span class='name'>MediumSpringGreen</span>
+				</li>
+			
+				<li>
+					<span class='color MediumTurquoise'></span>
+					<span class='name'>MediumTurquoise</span>
+				</li>
+			
+				<li>
+					<span class='color MediumVioletRed'></span>
+					<span class='name'>MediumVioletRed</span>
+				</li>
+			
+				<li>
+					<span class='color MidnightBlue'></span>
+					<span class='name'>MidnightBlue</span>
+				</li>
+			
+				<li>
+					<span class='color MintCream'></span>
+					<span class='name'>MintCream</span>
+				</li>
+			
+				<li>
+					<span class='color MistyRose'></span>
+					<span class='name'>MistyRose</span>
+				</li>
+			
+				<li>
+					<span class='color Moccasin'></span>
+					<span class='name'>Moccasin</span>
+				</li>
+			
+				<li>
+					<span class='color NavajoWhite'></span>
+					<span class='name'>NavajoWhite</span>
+				</li>
+			
+				<li>
+					<span class='color Navy'></span>
+					<span class='name'>Navy</span>
+				</li>
+			
+				<li>
+					<span class='color OldLace'></span>
+					<span class='name'>OldLace</span>
+				</li>
+			
+				<li>
+					<span class='color Olive'></span>
+					<span class='name'>Olive</span>
+				</li>
+			
+				<li>
+					<span class='color OliveDrab'></span>
+					<span class='name'>OliveDrab</span>
+				</li>
+			
+				<li>
+					<span class='color Orange'></span>
+					<span class='name'>Orange</span>
+				</li>
+			
+				<li>
+					<span class='color OrangeRed'></span>
+					<span class='name'>OrangeRed</span>
+				</li>
+			
+				<li>
+					<span class='color Orchid'></span>
+					<span class='name'>Orchid</span>
+				</li>
+			
+				<li>
+					<span class='color PaleGoldenRod'></span>
+					<span class='name'>PaleGoldenRod</span>
+				</li>
+			
+				<li>
+					<span class='color PaleGreen'></span>
+					<span class='name'>PaleGreen</span>
+				</li>
+			
+				<li>
+					<span class='color PaleTurquoise'></span>
+					<span class='name'>PaleTurquoise</span>
+				</li>
+			
+				<li>
+					<span class='color PaleVioletRed'></span>
+					<span class='name'>PaleVioletRed</span>
+				</li>
+			
+				<li>
+					<span class='color PapayaWhip'></span>
+					<span class='name'>PapayaWhip</span>
+				</li>
+			
+				<li>
+					<span class='color PeachPuff'></span>
+					<span class='name'>PeachPuff</span>
+				</li>
+			
+				<li>
+					<span class='color Peru'></span>
+					<span class='name'>Peru</span>
+				</li>
+			
+				<li>
+					<span class='color Pink'></span>
+					<span class='name'>Pink</span>
+				</li>
+			
+				<li>
+					<span class='color Plum'></span>
+					<span class='name'>Plum</span>
+				</li>
+			
+				<li>
+					<span class='color PowderBlue'></span>
+					<span class='name'>PowderBlue</span>
+				</li>
+			
+				<li>
+					<span class='color Purple'></span>
+					<span class='name'>Purple</span>
+				</li>
+			
+				<li>
+					<span class='color Red'></span>
+					<span class='name'>Red</span>
+				</li>
+			
+				<li>
+					<span class='color RosyBrown'></span>
+					<span class='name'>RosyBrown</span>
+				</li>
+			
+				<li>
+					<span class='color RoyalBlue'></span>
+					<span class='name'>RoyalBlue</span>
+				</li>
+			
+				<li>
+					<span class='color SaddleBrown'></span>
+					<span class='name'>SaddleBrown</span>
+				</li>
+			
+				<li>
+					<span class='color Salmon'></span>
+					<span class='name'>Salmon</span>
+				</li>
+			
+				<li>
+					<span class='color SandyBrown'></span>
+					<span class='name'>SandyBrown</span>
+				</li>
+			
+				<li>
+					<span class='color SeaGreen'></span>
+					<span class='name'>SeaGreen</span>
+				</li>
+			
+				<li>
+					<span class='color SeaShell'></span>
+					<span class='name'>SeaShell</span>
+				</li>
+			
+				<li>
+					<span class='color Sienna'></span>
+					<span class='name'>Sienna</span>
+				</li>
+			
+				<li>
+					<span class='color Silver'></span>
+					<span class='name'>Silver</span>
+				</li>
+			
+				<li>
+					<span class='color SkyBlue'></span>
+					<span class='name'>SkyBlue</span>
+				</li>
+			
+				<li>
+					<span class='color SlateBlue'></span>
+					<span class='name'>SlateBlue</span>
+				</li>
+			
+				<li>
+					<span class='color SlateGray'></span>
+					<span class='name'>SlateGray</span>
+				</li>
+			
+				<li>
+					<span class='color Snow'></span>
+					<span class='name'>Snow</span>
+				</li>
+			
+				<li>
+					<span class='color SpringGreen'></span>
+					<span class='name'>SpringGreen</span>
+				</li>
+			
+				<li>
+					<span class='color SteelBlue'></span>
+					<span class='name'>SteelBlue</span>
+				</li>
+			
+				<li>
+					<span class='color Tan'></span>
+					<span class='name'>Tan</span>
+				</li>
+			
+				<li>
+					<span class='color Teal'></span>
+					<span class='name'>Teal</span>
+				</li>
+			
+				<li>
+					<span class='color Thistle'></span>
+					<span class='name'>Thistle</span>
+				</li>
+			
+				<li>
+					<span class='color Tomato'></span>
+					<span class='name'>Tomato</span>
+				</li>
+			
+				<li>
+					<span class='color Turquoise'></span>
+					<span class='name'>Turquoise</span>
+				</li>
+			
+				<li>
+					<span class='color Violet'></span>
+					<span class='name'>Violet</span>
+				</li>
+			
+				<li>
+					<span class='color Wheat'></span>
+					<span class='name'>Wheat</span>
+				</li>
+			
+				<li>
+					<span class='color White'></span>
+					<span class='name'>White</span>
+				</li>
+			
+				<li>
+					<span class='color WhiteSmoke'></span>
+					<span class='name'>WhiteSmoke</span>
+				</li>
+			
+				<li>
+					<span class='color Yellow'></span>
+					<span class='name'>Yellow</span>
+				</li>
+			
+				<li>
+					<span class='color YellowGreen'></span>
+					<span class='name'>YellowGreen</span>
+				</li>
+			
+		</ul>
+	</div>
+
+	<script type="text/javascript" src='data/js/index.js'></script>
+
+</body>
+</html>

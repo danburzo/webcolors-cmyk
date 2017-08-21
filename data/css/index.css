@@ -1,0 +1,39 @@
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+
+header {
+	text-align: center;
+	margin: 2em 0;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 2.4em;
+	max-width: 16em;
+	margin: 0.5em auto;
+}
+
+.colors li {
+	display: inline-block;
+	text-align: center;
+	margin: 1em;
+	position: relative;
+}
+
+.color {
+	transition: 0.2s background-color;
+	display: block;
+	width: 5em;
+	height: 5em;
+	border-radius: 50%;
+	margin: 0 auto 1em;
+}
+
+.name {
+	position: absolute;
+	font-size: 0.8em;
+	top: 100%;
+	left: 0;
+	right: 0;
+}
