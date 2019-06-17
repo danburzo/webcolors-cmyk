@@ -1,4 +1,4 @@
-let transicc = require('./transform-icc');
+let transicc = require('./util/transform-icc');
 let culori = require('culori');
 let fs = require('fs');
 
