@@ -4920,11 +4920,6 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
-transicc@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/transicc/-/transicc-1.2.1.tgz#278a50f1e375558d056da17c623d77fbed0af386"
-  integrity sha1-J4pQ8eN1VY0FbaF8Yj13++0K84Y=
-
 trim-repeated@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/trim-repeated/-/trim-repeated-1.0.0.tgz#e3646a2ea4e891312bf7eace6cfb05380bc01c21"

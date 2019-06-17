@@ -8,16 +8,31 @@ import uncoatedFogra from '../data/cmyk-adobe-uncoated-fogra29.json';
 import webCoated from '../data/cmyk-adobe-us-web-coated-swop.json';
 import webUncoated from '../data/cmyk-adobe-us-web-uncoated.json';
 
+import psoCoated from '../data/pso-coated-v3.json';
+import psoUncoated from '../data/pso-uncoated-v3-fogra52.json';
+
+import legacyFograCoated from '../data/legacy/fogra-coated.json';
+import legacyFograUncoated from '../data/legacy/fogra-uncoated.json';
+import legacyWebCoated from '../data/legacy/web-coated.json';
+import legacyWebUncoated from '../data/legacy/web-uncoated.json';
+
 import Swatch from '../components/Swatch';
 
 import './index.css';
 
 const rgb = Object.keys(colorsNamed)
 	.sort()
+	.filter(c => !c.match(/grey/i))
 	.map(c => ({ converted: c }));
 
 const colormap = {
 	rgb,
+	psoCoated,
+	psoUncoated,
+	legacyFograCoated,
+	legacyFograUncoated,
+	legacyWebCoated,
+	legacyWebUncoated,
 	coatedFogra,
 	uncoatedFogra,
 	webCoated,
@@ -32,21 +47,11 @@ const Home = () => {
 	return (
 		<article>
 			<div>
-				<button type="button" onClick={() => setTab('rgb')}>
-					RGB
-				</button>
-				<button type="button" onClick={() => setTab('coatedFogra')}>
-					Coated FOGRA 39
-				</button>
-				<button type="button" onClick={() => setTab('uncoatedFogra')}>
-					Uncoated FOGRA 29
-				</button>
-				<button type="button" onClick={() => setTab('webCoated')}>
-					US Web Coated SWOP
-				</button>
-				<button type="button" onClick={() => setTab('webUncoated')}>
-					US Web Uncoated
-				</button>
+				{Object.keys(colormap).map(k => (
+					<button type="button" key={k} onClick={() => setTab(k)}>
+						{k}
+					</button>
+				))}
 			</div>
 			<div className="swatches">
 				<div className="swatchlist">

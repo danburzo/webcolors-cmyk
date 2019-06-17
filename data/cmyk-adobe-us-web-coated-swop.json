@@ -104,10 +104,6 @@
 		"converted": "#176231"
 	},
 	{
-		"original": "darkgrey",
-		"converted": "#aba9a9"
-	},
-	{
 		"original": "darkkhaki",
 		"converted": "#bab36b"
 	},
@@ -148,10 +144,6 @@
 		"converted": "#304e4e"
 	},
 	{
-		"original": "darkslategrey",
-		"converted": "#304e4e"
-	},
-	{
 		"original": "darkturquoise",
 		"converted": "#36bfc2"
 	},
@@ -169,10 +161,6 @@
 	},
 	{
 		"original": "dimgray",
-		"converted": "#6a6968"
-	},
-	{
-		"original": "dimgrey",
 		"converted": "#6a6968"
 	},
 	{
@@ -222,10 +210,6 @@
 	{
 		"original": "greenyellow",
 		"converted": "#b0d23c"
-	},
-	{
-		"original": "grey",
-		"converted": "#818080"
 	},
 	{
 		"original": "honeydew",
@@ -292,10 +276,6 @@
 		"converted": "#98cf8a"
 	},
 	{
-		"original": "lightgrey",
-		"converted": "#d4d3d2"
-	},
-	{
 		"original": "lightpink",
 		"converted": "#f8b2bc"
 	},
@@ -313,10 +293,6 @@
 	},
 	{
 		"original": "lightslategray",
-		"converted": "#778696"
-	},
-	{
-		"original": "lightslategrey",
 		"converted": "#778696"
 	},
 	{
@@ -529,10 +505,6 @@
 	},
 	{
 		"original": "slategray",
-		"converted": "#707f8d"
-	},
-	{
-		"original": "slategrey",
 		"converted": "#707f8d"
 	},
 	{
