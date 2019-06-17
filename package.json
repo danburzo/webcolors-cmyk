@@ -40,7 +40,7 @@
 		"dev": "next",
 		"build": "next build",
 		"start": "next start",
-		"export": "next export",
-		"deploy": "yarn build && yarn export && yarn gh-pages -d out --dotfiles"
+		"export": "next export -o dist",
+		"deploy": "yarn build && yarn export && gh-pages -d dist --dotfiles"
 	}
 }
