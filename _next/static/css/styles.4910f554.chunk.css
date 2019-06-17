@@ -1,0 +1,17 @@
+.swatch {
+	border-radius: 50%;
+	width: 5em;
+	height: 5em;
+	transition: background-color 0.2s;
+}
+
+.swatchlist {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.swatchlist > .swatch {
+	flex: 0 0 5em;
+	margin: 0.5em;
+}
+
