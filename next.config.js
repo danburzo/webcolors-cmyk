@@ -1,11 +1,22 @@
-const isProd = (process.env.NODE_ENV || 'production') === 'production';
-
+const fs = require('fs');
+const { join } = require('path');
+const { promisify } = require('util');
 const withCSS = require('@zeit/next-css');
+
+const pkg = require('./package.json');
+
+const copyFile = promisify(fs.copyFile);
+
 module.exports = withCSS({
-	exportPathMap: function() {
-		return {
-			'/': { page: '/' }
-		};
+	exportPathMap: async function(defaultPathMap, { dev, dir, outDir }) {
+		if (dev) {
+			return defaultPathMap;
+		}
+		await copyFile(
+			join(dir, 'static/.nojekyll'),
+			join(outDir, '.nojekyll')
+		);
+		return defaultPathMap;
 	},
-	assetPrefix: isProd ? '/webcolors-cymk' : ''
+	assetPrefix: process.env.NODE_ENV === 'production' ? `/${pkg.main}` : ''
 });
