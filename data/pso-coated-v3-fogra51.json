@@ -1,51 +1,51 @@
 [
 	{
 		"original": "aliceblue",
-		"converted": "#f1f9fe"
+		"converted": "#f0f7fd"
 	},
 	{
 		"original": "antiquewhite",
-		"converted": "#f9ead7"
+		"converted": "#faebd7"
 	},
 	{
 		"original": "aqua",
-		"converted": "#6fcddd"
+		"converted": "#8ed0d3"
 	},
 	{
 		"original": "aquamarine",
-		"converted": "#99d4c0"
+		"converted": "#a6d6c1"
 	},
 	{
 		"original": "azure",
-		"converted": "#f2fafb"
+		"converted": "#f1fafd"
 	},
 	{
 		"original": "beige",
-		"converted": "#f5f5dd"
+		"converted": "#f5f5dc"
 	},
 	{
 		"original": "bisque",
-		"converted": "#ffe4c4"
+		"converted": "#fee3c4"
 	},
 	{
 		"original": "black",
-		"converted": "#000000"
+		"converted": "#060300"
 	},
 	{
 		"original": "blanchedalmond",
-		"converted": "#ffebcd"
+		"converted": "#feebcd"
 	},
 	{
 		"original": "blue",
-		"converted": "#3853a4"
+		"converted": "#1f3c91"
 	},
 	{
 		"original": "blueviolet",
-		"converted": "#7650a1"
+		"converted": "#5d318a"
 	},
 	{
 		"original": "brown",
-		"converted": "#a62929"
+		"converted": "#a52a2a"
 	},
 	{
 		"original": "burlywood",
@@ -57,35 +57,35 @@
 	},
 	{
 		"original": "chartreuse",
-		"converted": "#93c93d"
+		"converted": "#8abe20"
 	},
 	{
 		"original": "chocolate",
-		"converted": "#d26a27"
+		"converted": "#d2691e"
 	},
 	{
 		"original": "coral",
-		"converted": "#f57e52"
+		"converted": "#f07a4c"
 	},
 	{
 		"original": "cornflowerblue",
-		"converted": "#6d91cb"
+		"converted": "#658cc5"
 	},
 	{
 		"original": "cornsilk",
-		"converted": "#fff8dd"
+		"converted": "#fff8db"
 	},
 	{
 		"original": "crimson",
-		"converted": "#dc1d3d"
+		"converted": "#dc143c"
 	},
 	{
 		"original": "cyan",
-		"converted": "#6fcddd"
+		"converted": "#8ed0d3"
 	},
 	{
 		"original": "darkblue",
-		"converted": "#2a2c7c"
+		"converted": "#292985"
 	},
 	{
 		"original": "darkcyan",
@@ -93,15 +93,15 @@
 	},
 	{
 		"original": "darkgoldenrod",
-		"converted": "#b7872c"
+		"converted": "#b8860c"
 	},
 	{
 		"original": "darkgray",
-		"converted": "#aaaaaa"
+		"converted": "#a9a9a9"
 	},
 	{
 		"original": "darkgreen",
-		"converted": "#176433"
+		"converted": "#15671a"
 	},
 	{
 		"original": "darkkhaki",
@@ -109,27 +109,27 @@
 	},
 	{
 		"original": "darkmagenta",
-		"converted": "#872788"
+		"converted": "#821680"
 	},
 	{
 		"original": "darkolivegreen",
-		"converted": "#566b30"
+		"converted": "#556b2f"
 	},
 	{
 		"original": "darkorange",
-		"converted": "#f78c1e"
+		"converted": "#f38600"
 	},
 	{
 		"original": "darkorchid",
-		"converted": "#864c9e"
+		"converted": "#71348b"
 	},
 	{
 		"original": "darkred",
-		"converted": "#8a171a"
+		"converted": "#8d0905"
 	},
 	{
 		"original": "darksalmon",
-		"converted": "#ea977a"
+		"converted": "#e9967a"
 	},
 	{
 		"original": "darkseagreen",
@@ -145,19 +145,19 @@
 	},
 	{
 		"original": "darkturquoise",
-		"converted": "#3cc1c8"
+		"converted": "#4bbcbf"
 	},
 	{
 		"original": "darkviolet",
-		"converted": "#7f469b"
+		"converted": "#652283"
 	},
 	{
 		"original": "deeppink",
-		"converted": "#ed2891"
+		"converted": "#e81e85"
 	},
 	{
 		"original": "deepskyblue",
-		"converted": "#40bbec"
+		"converted": "#29b8ea"
 	},
 	{
 		"original": "dimgray",
@@ -165,39 +165,39 @@
 	},
 	{
 		"original": "dodgerblue",
-		"converted": "#4c86c6"
+		"converted": "#3684c3"
 	},
 	{
 		"original": "firebrick",
-		"converted": "#b22424"
+		"converted": "#b22222"
 	},
 	{
 		"original": "floralwhite",
-		"converted": "#fffaf1"
+		"converted": "#fffaef"
 	},
 	{
 		"original": "forestgreen",
-		"converted": "#258c43"
+		"converted": "#278c25"
 	},
 	{
 		"original": "fuchsia",
-		"converted": "#b9529f"
+		"converted": "#a83f8f"
 	},
 	{
 		"original": "gainsboro",
-		"converted": "#dddddc"
+		"converted": "#dcdcdc"
 	},
 	{
 		"original": "ghostwhite",
-		"converted": "#f8f8fc"
+		"converted": "#f6f6fb"
 	},
 	{
 		"original": "gold",
-		"converted": "#fed700"
+		"converted": "#ffd800"
 	},
 	{
 		"original": "goldenrod",
-		"converted": "#daa628"
+		"converted": "#daa520"
 	},
 	{
 		"original": "gray",
@@ -205,91 +205,91 @@
 	},
 	{
 		"original": "green",
-		"converted": "#0c8140"
+		"converted": "#208524"
 	},
 	{
 		"original": "greenyellow",
-		"converted": "#b4d334"
+		"converted": "#a9ca21"
 	},
 	{
 		"original": "honeydew",
-		"converted": "#f2f8ee"
+		"converted": "#eff8ed"
 	},
 	{
 		"original": "hotpink",
-		"converted": "#f16ba8"
+		"converted": "#ed69a3"
 	},
 	{
-		"original": "indianred ",
-		"converted": "#ce5c5c"
+		"original": "indianred",
+		"converted": "#cd5c5c"
 	},
 	{
-		"original": "indigo ",
-		"converted": "#4d297c"
+		"original": "indigo",
+		"converted": "#502081"
 	},
 	{
 		"original": "ivory",
-		"converted": "#fffef2"
+		"converted": "#fffeef"
 	},
 	{
 		"original": "khaki",
-		"converted": "#f0e68b"
+		"converted": "#f0e68c"
 	},
 	{
 		"original": "lavender",
-		"converted": "#e7e6f3"
+		"converted": "#e3e4f3"
 	},
 	{
 		"original": "lavenderblush",
-		"converted": "#fef0f6"
+		"converted": "#fef0f5"
 	},
 	{
 		"original": "lawngreen",
-		"converted": "#90c83e"
+		"converted": "#88bd23"
 	},
 	{
 		"original": "lemonchiffon",
-		"converted": "#fffacf"
+		"converted": "#fffacc"
 	},
 	{
 		"original": "lightblue",
-		"converted": "#aed8e6"
+		"converted": "#add8e6"
 	},
 	{
 		"original": "lightcoral",
-		"converted": "#ef8080"
+		"converted": "#f0807f"
 	},
 	{
 		"original": "lightcyan",
-		"converted": "#e4f4f8"
+		"converted": "#e6f5f5"
 	},
 	{
 		"original": "lightgoldenrodyellow",
-		"converted": "#faf9d4"
+		"converted": "#faf9d1"
 	},
 	{
 		"original": "lightgray",
-		"converted": "#d4d4d3"
+		"converted": "#d3d3d3"
 	},
 	{
 		"original": "lightgreen",
-		"converted": "#9dd089"
+		"converted": "#97ca89"
 	},
 	{
 		"original": "lightpink",
-		"converted": "#f8b4c0"
+		"converted": "#f6b5be"
 	},
 	{
 		"original": "lightsalmon",
-		"converted": "#f89f7b"
+		"converted": "#f49d78"
 	},
 	{
 		"original": "lightseagreen",
-		"converted": "#1cb2aa"
+		"converted": "#21b2aa"
 	},
 	{
 		"original": "lightskyblue",
-		"converted": "#8cccf1"
+		"converted": "#88c9ed"
 	},
 	{
 		"original": "lightslategray",
@@ -301,123 +301,123 @@
 	},
 	{
 		"original": "lightyellow",
-		"converted": "#fefce2"
+		"converted": "#fdfbde"
 	},
 	{
 		"original": "lime",
-		"converted": "#69bd45"
+		"converted": "#66b32a"
 	},
 	{
 		"original": "limegreen",
-		"converted": "#50b848"
+		"converted": "#49ac32"
 	},
 	{
 		"original": "linen",
-		"converted": "#faf1e7"
+		"converted": "#faf0e6"
 	},
 	{
 		"original": "magenta",
-		"converted": "#b9529f"
+		"converted": "#a83f8f"
 	},
 	{
 		"original": "maroon",
-		"converted": "#7f1416"
+		"converted": "#810906"
 	},
 	{
 		"original": "mediumaquamarine",
-		"converted": "#6dc6a7"
+		"converted": "#71c2a4"
 	},
 	{
 		"original": "mediumblue",
-		"converted": "#35459d"
+		"converted": "#243089"
 	},
 	{
 		"original": "mediumorchid",
-		"converted": "#9f5ea6"
+		"converted": "#93559c"
 	},
 	{
 		"original": "mediumpurple",
-		"converted": "#8670b3"
+		"converted": "#7e6bac"
 	},
 	{
 		"original": "mediumseagreen",
-		"converted": "#3bb370"
+		"converted": "#3fb070"
 	},
 	{
 		"original": "mediumslateblue",
-		"converted": "#6e68af"
+		"converted": "#6461a7"
 	},
 	{
 		"original": "mediumspringgreen",
-		"converted": "#6dc286"
+		"converted": "#71bf87"
 	},
 	{
 		"original": "mediumturquoise",
-		"converted": "#59c5c4"
+		"converted": "#63c1bd"
 	},
 	{
 		"original": "mediumvioletred",
-		"converted": "#c71784"
+		"converted": "#c51983"
 	},
 	{
 		"original": "midnightblue",
-		"converted": "#2a276b"
+		"converted": "#252072"
 	},
 	{
 		"original": "mintcream",
-		"converted": "#f6fbf8"
+		"converted": "#f5fbf8"
 	},
 	{
 		"original": "mistyrose",
-		"converted": "#fde4e0"
+		"converted": "#fce3e0"
 	},
 	{
 		"original": "moccasin",
-		"converted": "#ffe4b5"
+		"converted": "#fee3b5"
 	},
 	{
 		"original": "navajowhite",
-		"converted": "#ffdead"
+		"converted": "#feddac"
 	},
 	{
 		"original": "navy",
-		"converted": "#282973"
+		"converted": "#292984"
 	},
 	{
 		"original": "oldlace",
-		"converted": "#fef6e7"
+		"converted": "#fdf5e6"
 	},
 	{
 		"original": "olive",
-		"converted": "#7f8133"
+		"converted": "#818100"
 	},
 	{
 		"original": "olivedrab",
-		"converted": "#6b8f3c"
+		"converted": "#6b8e23"
 	},
 	{
 		"original": "orange",
-		"converted": "#faa41a"
+		"converted": "#f7a100"
 	},
 	{
 		"original": "orangered",
-		"converted": "#f04923"
+		"converted": "#eb4403"
 	},
 	{
 		"original": "orchid",
-		"converted": "#c276b1"
+		"converted": "#b66faa"
 	},
 	{
 		"original": "palegoldenrod",
-		"converted": "#eee8a9"
+		"converted": "#eee8aa"
 	},
 	{
 		"original": "palegreen",
-		"converted": "#a6d48d"
+		"converted": "#a3d091"
 	},
 	{
 		"original": "paleturquoise",
-		"converted": "#b5e2e6"
+		"converted": "#bae2e3"
 	},
 	{
 		"original": "palevioletred",
@@ -425,51 +425,55 @@
 	},
 	{
 		"original": "papayawhip",
-		"converted": "#fff0d7"
+		"converted": "#ffefd5"
 	},
 	{
 		"original": "peachpuff",
-		"converted": "#fedab9"
+		"converted": "#fcd9b9"
 	},
 	{
 		"original": "peru",
-		"converted": "#cd853d"
+		"converted": "#cd853f"
 	},
 	{
 		"original": "pink",
-		"converted": "#f9bfcb"
+		"converted": "#f7bfc9"
 	},
 	{
 		"original": "plum",
-		"converted": "#d5a1ca"
+		"converted": "#cb9dc6"
 	},
 	{
 		"original": "powderblue",
-		"converted": "#b1e1e7"
+		"converted": "#b2dfe4"
 	},
 	{
 		"original": "purple",
-		"converted": "#7c277d"
+		"converted": "#811680"
+	},
+	{
+		"original": "rebeccapurple",
+		"converted": "#5e328b"
 	},
 	{
 		"original": "red",
-		"converted": "#ee1f24"
+		"converted": "#e8190c"
 	},
 	{
 		"original": "rosybrown",
-		"converted": "#bc8e8f"
+		"converted": "#bc8f8f"
 	},
 	{
 		"original": "royalblue",
-		"converted": "#4d69b1"
+		"converted": "#3d60a8"
 	},
 	{
 		"original": "saddlebrown",
-		"converted": "#8b461f"
+		"converted": "#8b4513"
 	},
 	{
 		"original": "salmon",
-		"converted": "#f47f72"
+		"converted": "#f07d6f"
 	},
 	{
 		"original": "sandybrown",
@@ -477,27 +481,27 @@
 	},
 	{
 		"original": "seagreen",
-		"converted": "#2c8b57"
+		"converted": "#2e8b57"
 	},
 	{
 		"original": "seashell",
-		"converted": "#fff5ef"
+		"converted": "#fff5ee"
 	},
 	{
 		"original": "sienna",
-		"converted": "#a0522c"
+		"converted": "#a0522d"
 	},
 	{
 		"original": "silver",
-		"converted": "#c1c0c0"
+		"converted": "#c0c0c0"
 	},
 	{
 		"original": "skyblue",
-		"converted": "#87ceea"
+		"converted": "#88ceeb"
 	},
 	{
 		"original": "slateblue",
-		"converted": "#675eaa"
+		"converted": "#5b549e"
 	},
 	{
 		"original": "slategray",
@@ -505,15 +509,15 @@
 	},
 	{
 		"original": "snow",
-		"converted": "#fffafb"
+		"converted": "#fffafa"
 	},
 	{
 		"original": "springgreen",
-		"converted": "#70c169"
+		"converted": "#65b766"
 	},
 	{
 		"original": "steelblue",
-		"converted": "#4683b5"
+		"converted": "#4682b4"
 	},
 	{
 		"original": "tan",
@@ -529,15 +533,15 @@
 	},
 	{
 		"original": "tomato",
-		"converted": "#f2634b"
+		"converted": "#ed5d40"
 	},
 	{
 		"original": "turquoise",
-		"converted": "#64c7c2"
+		"converted": "#74c5bb"
 	},
 	{
 		"original": "violet",
-		"converted": "#ce8bbc"
+		"converted": "#c080b4"
 	},
 	{
 		"original": "wheat",
@@ -549,14 +553,14 @@
 	},
 	{
 		"original": "whitesmoke",
-		"converted": "#f5f6f6"
+		"converted": "#f5f5f5"
 	},
 	{
 		"original": "yellow",
-		"converted": "#f7ec12"
+		"converted": "#feec00"
 	},
 	{
 		"original": "yellowgreen",
-		"converted": "#9acb3c"
+		"converted": "#98c42f"
 	}
 ]

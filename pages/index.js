@@ -2,19 +2,14 @@
 import { colorsNamed } from 'culori';
 import { useState } from 'react';
 
-// Data
-import coatedFogra from '../data/cmyk-adobe-coated-fogra39.json';
-import uncoatedFogra from '../data/cmyk-adobe-uncoated-fogra29.json';
-import webCoated from '../data/cmyk-adobe-us-web-coated-swop.json';
-import webUncoated from '../data/cmyk-adobe-us-web-uncoated.json';
-
-import psoCoated from '../data/pso-coated-v3.json';
+import psoCoated from '../data/pso-coated-v3-fogra51.json';
 import psoUncoated from '../data/pso-uncoated-v3-fogra52.json';
-
-import legacyFograCoated from '../data/legacy/fogra-coated.json';
-import legacyFograUncoated from '../data/legacy/fogra-uncoated.json';
-import legacyWebCoated from '../data/legacy/web-coated.json';
-import legacyWebUncoated from '../data/legacy/web-uncoated.json';
+import coatedFogra39 from '../data/iso-coated-v2-fogra39.json';
+import uncoatedFogra29 from '../data/iso-uncoated-fogra29.json';
+import adobeCoatedFogra39 from '../data/adobe-coated-fogra39.json';
+import adobeUncoatedFogra29 from '../data/adobe-uncoated-fogra29.json';
+import adobeUsWebCoated from '../data/adobe-us-web-coated-swop-v2.json';
+import adobeUsWebUncoated from '../data/adobe-us-web-uncoated-v2.json';
 
 import Swatch from '../components/Swatch';
 
@@ -29,14 +24,12 @@ const colormap = {
 	rgb,
 	psoCoated,
 	psoUncoated,
-	legacyFograCoated,
-	legacyFograUncoated,
-	legacyWebCoated,
-	legacyWebUncoated,
-	coatedFogra,
-	uncoatedFogra,
-	webCoated,
-	webUncoated
+	coatedFogra39,
+	adobeCoatedFogra39,
+	uncoatedFogra29,
+	adobeUncoatedFogra29,
+	adobeUsWebCoated,
+	adobeUsWebUncoated
 };
 
 const Home = () => {
