@@ -1,26 +1,85 @@
 body {
-	font-family: sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial,
+		sans-serif;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 1em 2em;
+	background: #000;
+	color: #fff;
+}
+
+header h1 {
+	font-size: 1.4em;
+}
+
+article {
+	padding: 2em;
+}
+
+a {
+	color: #5463a3;
+}
+
+.main--light {
+	color: #333;
+}
+
+.main--dark {
+	color: #fff;
+}
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em 2em;
+	border-bottom: 1px solid #000;
+	position: sticky;
+	position: -webkit-sticky;
+	background: #fff;
+	color: #333;
+	top: 0;
+}
+
+label {
+	font-weight: bold;
+	display: block;
+}
+
+select,
+input {
+	vertical-align: middle;
 }
 
 .swatchlist {
 	display: flex;
 	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.8em;
+	--scale: 10em;
 }
 
 .swatchlist > .swatch {
-	flex: 0 0 5em;
-	margin: 0.5em;
+	margin: 1em;
+	margin: calc(var(--scale) / 10);
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 10em;
+	flex-basis: var(--scale);
 }
 
-button {
-	appearance: none;
-	border: none;
-	padding: 1em;
-	line-height: 1;
-	font-family: inherit;
-	line-height: 1;
-	font-size: 1em;
-	background-color: rgb(51, 80, 145);
-	border-radius: 0.5em;
-	color: #fff;
+footer {
+	padding: 2em;
+}
+
+@media (max-width: 30em) {
+	.controls {
+		display: block;
+	}
 }

@@ -7,20 +7,18 @@ const pkg = require('./package.json');
 
 const copyFile = promisify(fs.copyFile);
 
-const config = {};
-
-// if (process.env.NODE_ENV === 'production') {
-// 	config.exportPathMap = async function(defaultPathMap, { dev, dir, outDir }) {
-// 		if (dev) {
-// 			return defaultPathMap;
-// 		}
-// 		await copyFile(
-// 			join(dir, 'static/.nojekyll'),
-// 			join(outDir, '.nojekyll')
-// 		);
-// 		return defaultPathMap;
-// 	};
-// 	config.assetPrefix = `/${pkg.main}`;
-// };
+const config = {
+	exportPathMap: async function(defaultPathMap, { dev, dir, outDir }) {
+		if (dev) {
+			return defaultPathMap;
+		}
+		await copyFile(
+			join(dir, 'static/.nojekyll'),
+			join(outDir, '.nojekyll')
+		);
+		return defaultPathMap;
+	},
+	assetPrefix: process.env.NODE_ENV === 'production' ? `/${pkg.name}` : ''
+};
 
 module.exports = withCSS(config);
