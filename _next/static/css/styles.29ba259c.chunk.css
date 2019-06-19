@@ -1,0 +1,124 @@
+.swatch {
+	text-align: center;
+}
+
+.swatch__color {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	border-radius: 50%;
+	width: 100%;
+	padding: 0 0 100% 0;
+	height: 0;
+	transition: background-color 0.2s;
+	margin: 0 auto 1em;
+	line-height: 1;
+}
+
+.swatch__color:focus {
+	outline: 2px solid red;
+}
+
+.swatch__name {
+	font-size: 1em;
+	margin: 0.5em 0 0;
+	font-weight: normal;
+}
+
+.swatch__value {
+	display: block;
+	font-size: 1.6em;
+}
+
+body {
+	font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+	color: #333;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 1em 2em;
+	background: #000;
+	color: #fff;
+}
+
+header h1 {
+	font-size: 1.4em;
+}
+
+article {
+	padding: 2em;
+}
+
+.main--light {
+	color: #333;
+}
+
+.main--dark {
+	color: #fff;
+}
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em 2em;
+	border-bottom: 1px solid #000;
+	position: sticky;
+	position: -webkit-sticky;
+	background: #fff;
+	color: #333;
+	top: 0;
+}
+
+label {
+	font-weight: bold;
+}
+
+select {
+	border: 1px solid #ccc;
+	font-family: inherit;
+	padding: 0.5em;
+	font-size: 1em;
+}
+
+select, input {
+	vertical-align: middle;
+	margin: 1em;
+	display: inline-block;
+}
+
+.swatchlist {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.8em;
+	--scale: 10em;
+}
+
+.swatchlist > .swatch {
+	margin: 1em;
+	margin: calc(var(--scale) / 10);
+	flex-grow: 0;
+	flex-shrink: 0;
+	flex-basis: 10em;
+	flex-basis: var(--scale);
+}
+
+button {
+	appearance: none;
+	border: none;
+	padding: 1em;
+	line-height: 1;
+	font-family: inherit;
+	line-height: 1;
+	font-size: 1em;
+	background-color: rgb(51, 80, 145);
+	border-radius: 0.5em;
+	color: #fff;
+}
+
