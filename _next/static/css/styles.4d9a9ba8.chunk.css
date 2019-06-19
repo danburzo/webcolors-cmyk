@@ -15,6 +15,7 @@
 	margin: 0 auto 1em;
 	line-height: 1;
 	border: none;
+	display: block;
 }
 
 .swatch__color:focus {
