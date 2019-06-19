@@ -53,6 +53,10 @@ article {
 	padding: 2em;
 }
 
+a {
+	color: #5463a3;
+}
+
 .main--light {
 	color: #333;
 }
@@ -100,6 +104,10 @@ select, input {
 	flex-shrink: 0;
 	flex-basis: 10em;
 	flex-basis: var(--scale);
+}
+
+footer {
+	padding: 2em;
 }
 
 @media (max-width: 30em) {
