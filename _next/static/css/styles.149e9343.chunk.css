@@ -19,13 +19,14 @@
 }
 
 .swatch__color:focus {
-	outline: 2px solid red;
+	box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .swatch__name {
 	font-size: 1em;
 	margin: 0.5em 0 0;
 	font-weight: normal;
+	opacity: 0.75;
 }
 
 .swatch__value {
@@ -53,6 +54,7 @@ header h1 {
 
 article {
 	padding: 2em;
+	transition: background-color 0.2s;
 }
 
 a {
@@ -72,9 +74,11 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.5em 2em;
-	border-bottom: 1px solid #000;
-	position: sticky;
+	border-bottom: 1px solid #333;
 	position: -webkit-sticky;
+	position: sticky;
+	/* Fix for Firefox */
+	z-index: 10;
 	background: #fff;
 	color: #333;
 	top: 0;
@@ -88,12 +92,12 @@ label {
 select {
 	/* safari only */
 	font-size: max(1em, 16px);
-	max-width: 16em;
 }
 
 select,
 input {
 	vertical-align: middle;
+	width: 16em;
 }
 
 .swatchlist {
@@ -122,6 +126,10 @@ footer {
 @media (max-width: 30em) {
 	.controls {
 		display: block;
+	}
+
+	.controls > * + * {
+		margin-top: 0.5em;
 	}
 }
 
