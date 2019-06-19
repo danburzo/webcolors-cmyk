@@ -1,6 +1,6 @@
 /* Uncoated FOGRA29 (ISO 12647-2:2004) */
 
-:root {
+.profile--uncoatedfogra29 {
 	--aliceblue: #f2f7fc;
 	--antiquewhite: #fcecd7;
 	--aqua: #77c7d8;

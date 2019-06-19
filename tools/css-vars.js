@@ -2,10 +2,10 @@ let fs = require('fs');
 let { join } = require('path');
 let fg = require('fast-glob');
 
-let template = (comment, colors) => `
-/* ${comment} */
+let template = ({ id, name, colors }) => `
+/* ${name} */
 
-:root {
+.profile--${id} {
 	${colors.map(c => `--${c.name}: ${c.value};`).join('\n\t')}
 }`;
 
@@ -14,8 +14,5 @@ let jsons = fg
 	.map(file => {
 		let filepath = join(__dirname, '../data', file);
 		let obj = JSON.parse(fs.readFileSync(filepath), 'utf8');
-		fs.writeFileSync(
-			filepath.replace(/\.json$/, '.css'),
-			template(obj.name, obj.colors)
-		);
+		fs.writeFileSync(filepath.replace(/\.json$/, '.css'), template(obj));
 	});

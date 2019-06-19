@@ -1,6 +1,6 @@
 /* Coated FOGRA39 (ISO 12647-2:2004) */
 
-:root {
+.profile--coatedfogra39 {
 	--aliceblue: #f2f8fd;
 	--antiquewhite: #fcebd7;
 	--aqua: #6fc7d9;
