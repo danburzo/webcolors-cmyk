@@ -2,6 +2,7 @@ const fs = require('fs');
 const { join } = require('path');
 const { promisify } = require('util');
 const withCSS = require('@zeit/next-css');
+const withImages = require('next-images');
 
 const pkg = require('./package.json');
 
@@ -21,4 +22,4 @@ const config = {
 	assetPrefix: process.env.NODE_ENV === 'production' ? `/${pkg.name}` : ''
 };
 
-module.exports = withCSS(config);
+module.exports = withImages(withCSS(config));

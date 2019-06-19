@@ -9,6 +9,7 @@ export default ({ name, color, compact, onClick }) => (
 			className="swatch__color"
 			onClick={onClick}
 			style={{ backgroundColor: color }}
+			aria-label={name}
 		></button>
 		{!compact && (
 			<React.Fragment>

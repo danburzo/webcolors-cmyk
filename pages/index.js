@@ -1,7 +1,8 @@
 // Libs
 import { colorsNamed, formatter, wcagLuminance } from 'culori';
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
+// import Head from 'next/head';
+import NextSeo from 'next-seo';
 
 import Swatch from '../components/Swatch';
 
@@ -16,14 +17,32 @@ const srgb = Object.keys(colorsNamed)
 import profiles from '../data/profiles.json';
 
 const options = [
+	...profiles,
 	{
 		id: 'srgb',
 		name: 'sRGB',
 		colors: srgb
 	}
-].concat(profiles);
+];
 
 const initialBg = '#f8f5f5';
+
+const meta = {
+	title: 'CMYK Named Colors',
+	description: 'Named CSS colors, converted to CMYK and back to RGB.',
+	openGraph: {
+		images: [{ title: '', url: require('../static/webcolors-cmyk.png') }]
+	},
+	twitter: {
+		handle: '@danburzo',
+		cardType: 'summary_large_image'
+	}
+};
+
+const json_url = id =>
+	`https://raw.githubusercontent.com/danburzo/webcolors-cmyk/master/data/colors/${id}.json`;
+const css_url = id =>
+	`https://raw.githubusercontent.com/danburzo/webcolors-cmyk/master/data/colors/${id}.css`;
 
 const Home = () => {
 	let [tab, setTab] = useState('srgb');
@@ -32,6 +51,11 @@ const Home = () => {
 	let [bg, setBg] = useState(initialBg);
 
 	let bgIsLight = wcagLuminance(bg) > 0.2;
+
+	// Once JS kicks in, switch to a CMYK profile
+	useEffect(() => {
+		setTab(options[0].id);
+	}, []);
 
 	useEffect(() => {
 		let profile = options.find(o => o.id === tab);
@@ -49,17 +73,19 @@ const Home = () => {
 	}, [tab]);
 
 	return (
-		<div>
-			<Head>
-				<title>CMYK Named Colors</title>
-			</Head>
+		<React.Fragment>
+			<NextSeo config={meta} />
 			<header>
 				<h1>CSS Named Colors, converted to CMYK and back</h1>
 			</header>
 			<div className="controls">
 				<label>
 					Color profile:{' '}
-					<select value={tab} onChange={e => setTab(e.target.value)}>
+					<select
+						value={tab}
+						autocomplete="off"
+						onChange={e => setTab(e.target.value)}
+					>
 						{options.map(o => (
 							<option key={o.id} value={o.id}>
 								{o.name}
@@ -67,6 +93,21 @@ const Home = () => {
 						))}
 					</select>
 				</label>
+				<div>
+					<a
+						href={tab !== 'srgb' ? json_url(tab) : ''}
+						target="_blank"
+					>
+						&darr; JSON
+					</a>{' '}
+					/{' '}
+					<a
+						href={tab !== 'srgb' ? css_url(tab) : ''}
+						target="_blank"
+					>
+						&darr; CSS
+					</a>
+				</div>
 				<label>
 					Swatch size:{' '}
 					<input
@@ -83,25 +124,19 @@ const Home = () => {
 				className={`${bgIsLight ? 'main--light' : 'main--dark'}`}
 				style={{ backgroundColor: bg }}
 			>
-				<div className="swatches">
-					<div
-						className="swatchlist"
-						style={{ '--scale': `${scale}em` }}
-					>
-						{list.map(({ name, value }, i) => (
-							<Swatch
-								color={value}
-								key={i}
-								name={name}
-								compact={scale < 10}
-								onClick={e => {
-									setBg(value);
-									e.stopPropagation();
-								}}
-							/>
-						))}
-					</div>
-				</div>
+				<ul className="swatchlist" style={{ '--scale': `${scale}em` }}>
+					{list.map(({ name, value }, i) => (
+						<Swatch
+							color={value}
+							key={i}
+							name={name}
+							compact={scale < 10}
+							onClick={e => {
+								setBg(value === bg ? initialBg : value);
+							}}
+						/>
+					))}
+				</ul>
 			</article>
 			<footer>
 				A thing by <a href="http://danburzo.ro">Dan Burzo</a>. Source
@@ -111,7 +146,7 @@ const Home = () => {
 				</a>
 				.
 			</footer>
-		</div>
+		</React.Fragment>
 	);
 };
 
