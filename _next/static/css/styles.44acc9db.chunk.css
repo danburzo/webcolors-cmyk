@@ -94,8 +94,8 @@ label {
 	display: block;
 }
 
+/* safari only */
 select {
-	/* safari only */
 	font-size: max(1em, 16px);
 }
 
