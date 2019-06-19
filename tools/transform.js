@@ -1,23 +1,18 @@
-let culori = require('culori');
 let fs = require('fs');
+let { join } = require('path');
+
+let culori = require('culori');
+let fg = require('fast-glob');
 let { convert } = require('node-lcms');
+let icc = require('icc');
+
+const ICC_PROFILES_DIR =
+	'/Library/Application Support/Adobe/Color/Profiles/Recommended';
 
 // CSS Named Colors
 let COLORS = Object.keys(culori.colorsNamed)
 	.sort()
 	.filter(c => !c.match(/grey/i));
-
-// CMYK Profiles
-const PROFILES = [
-	'pso-coated-v3-fogra51',
-	'pso-uncoated-v3-fogra52',
-	'iso-coated-v2-fogra39',
-	'iso-uncoated-fogra29',
-	'adobe-coated-fogra39',
-	'adobe-uncoated-fogra29',
-	'adobe-us-web-coated-swop-v2',
-	'adobe-us-web-uncoated-v2'
-];
 
 const hex = culori.formatter('hex');
 
@@ -40,15 +35,46 @@ const convert_opts = {
 	bpc: true
 };
 
-const convertColor = (original, cmyk_profile) => {
-	let profile_path = require.resolve(`../profiles/${cmyk_profile}.icc`);
-	let rgb_to_cmyk = convert({ ...convert_opts, profile_out: profile_path });
-	let cmyk_to_rgb = convert({ ...convert_opts, profile_in: profile_path });
-	let converted = arr_to_hex(cmyk_to_rgb(rgb_to_cmyk(rgb_to_arr(original))));
-	return { original, converted };
+const converter = cmyk_profile => {
+	let rgb_to_cmyk = convert({ ...convert_opts, profile_out: cmyk_profile });
+	let cmyk_to_rgb = convert({ ...convert_opts, profile_in: cmyk_profile });
+	return name => {
+		let value = arr_to_hex(cmyk_to_rgb(rgb_to_cmyk(rgb_to_arr(name))));
+		return { name, value };
+	};
 };
 
-PROFILES.forEach(profile => {
-	let res = COLORS.map(color => convertColor(color, profile));
-	fs.writeFileSync(`data/${profile}.json`, JSON.stringify(res, null, '\t'));
+let profiles = fg
+	.sync('*.icc', {
+		cwd: ICC_PROFILES_DIR,
+		caseSensitiveMatch: false,
+		exclude: ['*rgb*.icc', 'p3.icc']
+	})
+	.map(file => {
+		let profile = join(ICC_PROFILES_DIR, file);
+		let info = icc.parse(fs.readFileSync(profile));
+		if (info.colorSpace === 'RGB') {
+			return undefined;
+		}
+		let conv = converter(profile);
+		return {
+			id: file.replace(/\.icc$/, '').toLowerCase(),
+			name: info.description,
+			colors: COLORS.map(color => conv(color))
+		};
+	})
+	.filter(p => p);
+
+// Profiles metadata
+fs.writeFileSync(
+	'data/profiles.json',
+	JSON.stringify(profiles.map(({ name, id }) => ({ name, id })), null, '\t')
+);
+
+// Individual profile content
+profiles.forEach(profile => {
+	fs.writeFileSync(
+		`data/colors/${profile.id}.json`,
+		JSON.stringify(profile, null, '\t')
+	);
 });

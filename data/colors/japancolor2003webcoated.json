@@ -1,0 +1,570 @@
+{
+	"id": "japancolor2003webcoated",
+	"name": "Japan Color 2003 Web Coated",
+	"colors": [
+		{
+			"name": "aliceblue",
+			"value": "#f2f8fd"
+		},
+		{
+			"name": "antiquewhite",
+			"value": "#fbead6"
+		},
+		{
+			"name": "aqua",
+			"value": "#79cbdd"
+		},
+		{
+			"name": "aquamarine",
+			"value": "#9ed4c1"
+		},
+		{
+			"name": "azure",
+			"value": "#f2fafb"
+		},
+		{
+			"name": "beige",
+			"value": "#f6f4db"
+		},
+		{
+			"name": "bisque",
+			"value": "#fee3c5"
+		},
+		{
+			"name": "black",
+			"value": "#010101"
+		},
+		{
+			"name": "blanchedalmond",
+			"value": "#ffeacc"
+		},
+		{
+			"name": "blue",
+			"value": "#23469b"
+		},
+		{
+			"name": "blueviolet",
+			"value": "#684296"
+		},
+		{
+			"name": "brown",
+			"value": "#a62827"
+		},
+		{
+			"name": "burlywood",
+			"value": "#dfb785"
+		},
+		{
+			"name": "cadetblue",
+			"value": "#619e9f"
+		},
+		{
+			"name": "chartreuse",
+			"value": "#94c421"
+		},
+		{
+			"name": "chocolate",
+			"value": "#d3671c"
+		},
+		{
+			"name": "coral",
+			"value": "#f37c51"
+		},
+		{
+			"name": "cornflowerblue",
+			"value": "#6c8ec9"
+		},
+		{
+			"name": "cornsilk",
+			"value": "#fff8dc"
+		},
+		{
+			"name": "crimson",
+			"value": "#dd0f3b"
+		},
+		{
+			"name": "cyan",
+			"value": "#79cbdd"
+		},
+		{
+			"name": "darkblue",
+			"value": "#102079"
+		},
+		{
+			"name": "darkcyan",
+			"value": "#018b8a"
+		},
+		{
+			"name": "darkgoldenrod",
+			"value": "#b9871f"
+		},
+		{
+			"name": "darkgray",
+			"value": "#aaa8a7"
+		},
+		{
+			"name": "darkgreen",
+			"value": "#036432"
+		},
+		{
+			"name": "darkkhaki",
+			"value": "#beb76a"
+		},
+		{
+			"name": "darkmagenta",
+			"value": "#881384"
+		},
+		{
+			"name": "darkolivegreen",
+			"value": "#576b2d"
+		},
+		{
+			"name": "darkorange",
+			"value": "#f5890d"
+		},
+		{
+			"name": "darkorchid",
+			"value": "#7a4195"
+		},
+		{
+			"name": "darkred",
+			"value": "#89131c"
+		},
+		{
+			"name": "darksalmon",
+			"value": "#ea9579"
+		},
+		{
+			"name": "darkseagreen",
+			"value": "#91bd8e"
+		},
+		{
+			"name": "darkslateblue",
+			"value": "#483c8a"
+		},
+		{
+			"name": "darkslategray",
+			"value": "#324f4f"
+		},
+		{
+			"name": "darkturquoise",
+			"value": "#49bcc4"
+		},
+		{
+			"name": "darkviolet",
+			"value": "#723991"
+		},
+		{
+			"name": "deeppink",
+			"value": "#ea288b"
+		},
+		{
+			"name": "deepskyblue",
+			"value": "#3dbaeb"
+		},
+		{
+			"name": "dimgray",
+			"value": "#6a6969"
+		},
+		{
+			"name": "dodgerblue",
+			"value": "#4985c6"
+		},
+		{
+			"name": "firebrick",
+			"value": "#b22221"
+		},
+		{
+			"name": "floralwhite",
+			"value": "#fff9ef"
+		},
+		{
+			"name": "forestgreen",
+			"value": "#278b38"
+		},
+		{
+			"name": "fuchsia",
+			"value": "#b04c99"
+		},
+		{
+			"name": "gainsboro",
+			"value": "#dddbdb"
+		},
+		{
+			"name": "ghostwhite",
+			"value": "#faf8fc"
+		},
+		{
+			"name": "gold",
+			"value": "#ffd600"
+		},
+		{
+			"name": "goldenrod",
+			"value": "#dba51a"
+		},
+		{
+			"name": "gray",
+			"value": "#81807f"
+		},
+		{
+			"name": "green",
+			"value": "#0c8039"
+		},
+		{
+			"name": "greenyellow",
+			"value": "#b2cf10"
+		},
+		{
+			"name": "honeydew",
+			"value": "#f2f9ee"
+		},
+		{
+			"name": "hotpink",
+			"value": "#ef6ba8"
+		},
+		{
+			"name": "indianred",
+			"value": "#ce5b5b"
+		},
+		{
+			"name": "indigo",
+			"value": "#491b7a"
+		},
+		{
+			"name": "ivory",
+			"value": "#fffef1"
+		},
+		{
+			"name": "khaki",
+			"value": "#f1e68b"
+		},
+		{
+			"name": "lavender",
+			"value": "#e7e5f3"
+		},
+		{
+			"name": "lavenderblush",
+			"value": "#feeff3"
+		},
+		{
+			"name": "lawngreen",
+			"value": "#91c222"
+		},
+		{
+			"name": "lemonchiffon",
+			"value": "#fffacd"
+		},
+		{
+			"name": "lightblue",
+			"value": "#afd7e5"
+		},
+		{
+			"name": "lightcoral",
+			"value": "#f17f7e"
+		},
+		{
+			"name": "lightcyan",
+			"value": "#e4f4f8"
+		},
+		{
+			"name": "lightgoldenrodyellow",
+			"value": "#fcfad3"
+		},
+		{
+			"name": "lightgray",
+			"value": "#d5d3d2"
+		},
+		{
+			"name": "lightgreen",
+			"value": "#9bcd87"
+		},
+		{
+			"name": "lightpink",
+			"value": "#f7b4c0"
+		},
+		{
+			"name": "lightsalmon",
+			"value": "#f69e79"
+		},
+		{
+			"name": "lightseagreen",
+			"value": "#24b2a9"
+		},
+		{
+			"name": "lightskyblue",
+			"value": "#8dcbef"
+		},
+		{
+			"name": "lightslategray",
+			"value": "#778797"
+		},
+		{
+			"name": "lightsteelblue",
+			"value": "#b1c3dc"
+		},
+		{
+			"name": "lightyellow",
+			"value": "#fffde1"
+		},
+		{
+			"name": "lime",
+			"value": "#68b52d"
+		},
+		{
+			"name": "limegreen",
+			"value": "#53b038"
+		},
+		{
+			"name": "linen",
+			"value": "#fbefe4"
+		},
+		{
+			"name": "magenta",
+			"value": "#b04c99"
+		},
+		{
+			"name": "maroon",
+			"value": "#7e1119"
+		},
+		{
+			"name": "mediumaquamarine",
+			"value": "#6ec1a5"
+		},
+		{
+			"name": "mediumblue",
+			"value": "#243b94"
+		},
+		{
+			"name": "mediumorchid",
+			"value": "#9c5ba3"
+		},
+		{
+			"name": "mediumpurple",
+			"value": "#856fb1"
+		},
+		{
+			"name": "mediumseagreen",
+			"value": "#40b271"
+		},
+		{
+			"name": "mediumslateblue",
+			"value": "#6965ac"
+		},
+		{
+			"name": "mediumspringgreen",
+			"value": "#68bc82"
+		},
+		{
+			"name": "mediumturquoise",
+			"value": "#61c1c1"
+		},
+		{
+			"name": "mediumvioletred",
+			"value": "#c81183"
+		},
+		{
+			"name": "midnightblue",
+			"value": "#20226c"
+		},
+		{
+			"name": "mintcream",
+			"value": "#f7fbf8"
+		},
+		{
+			"name": "mistyrose",
+			"value": "#fde3e0"
+		},
+		{
+			"name": "moccasin",
+			"value": "#ffe3b4"
+		},
+		{
+			"name": "navajowhite",
+			"value": "#feddae"
+		},
+		{
+			"name": "navy",
+			"value": "#15216f"
+		},
+		{
+			"name": "oldlace",
+			"value": "#fff5e5"
+		},
+		{
+			"name": "olive",
+			"value": "#7f802c"
+		},
+		{
+			"name": "olivedrab",
+			"value": "#6b8e30"
+		},
+		{
+			"name": "orange",
+			"value": "#f9a30f"
+		},
+		{
+			"name": "orangered",
+			"value": "#ee4818"
+		},
+		{
+			"name": "orchid",
+			"value": "#c174af"
+		},
+		{
+			"name": "palegoldenrod",
+			"value": "#f0e8a9"
+		},
+		{
+			"name": "palegreen",
+			"value": "#a7d28d"
+		},
+		{
+			"name": "paleturquoise",
+			"value": "#b7e1e5"
+		},
+		{
+			"name": "palevioletred",
+			"value": "#dd6f93"
+		},
+		{
+			"name": "papayawhip",
+			"value": "#ffeed5"
+		},
+		{
+			"name": "peachpuff",
+			"value": "#fdd8ba"
+		},
+		{
+			"name": "peru",
+			"value": "#ce843d"
+		},
+		{
+			"name": "pink",
+			"value": "#f8beca"
+		},
+		{
+			"name": "plum",
+			"value": "#d5a0ca"
+		},
+		{
+			"name": "powderblue",
+			"value": "#b2dfe4"
+		},
+		{
+			"name": "purple",
+			"value": "#7f107e"
+		},
+		{
+			"name": "rebeccapurple",
+			"value": "#65358f"
+		},
+		{
+			"name": "red",
+			"value": "#eb181a"
+		},
+		{
+			"name": "rosybrown",
+			"value": "#be8f8f"
+		},
+		{
+			"name": "royalblue",
+			"value": "#4563ad"
+		},
+		{
+			"name": "saddlebrown",
+			"value": "#8b451e"
+		},
+		{
+			"name": "salmon",
+			"value": "#f27e72"
+		},
+		{
+			"name": "sandybrown",
+			"value": "#f5a45e"
+		},
+		{
+			"name": "seagreen",
+			"value": "#2e8b56"
+		},
+		{
+			"name": "seashell",
+			"value": "#fff4ed"
+		},
+		{
+			"name": "sienna",
+			"value": "#a2522a"
+		},
+		{
+			"name": "silver",
+			"value": "#c1bfbe"
+		},
+		{
+			"name": "skyblue",
+			"value": "#89cdea"
+		},
+		{
+			"name": "slateblue",
+			"value": "#6158a4"
+		},
+		{
+			"name": "slategray",
+			"value": "#717f8f"
+		},
+		{
+			"name": "snow",
+			"value": "#fffafa"
+		},
+		{
+			"name": "springgreen",
+			"value": "#6ebb65"
+		},
+		{
+			"name": "steelblue",
+			"value": "#4881b3"
+		},
+		{
+			"name": "tan",
+			"value": "#d3b48b"
+		},
+		{
+			"name": "teal",
+			"value": "#08807f"
+		},
+		{
+			"name": "thistle",
+			"value": "#d9c0d8"
+		},
+		{
+			"name": "tomato",
+			"value": "#f0624a"
+		},
+		{
+			"name": "turquoise",
+			"value": "#6cc3c0"
+		},
+		{
+			"name": "violet",
+			"value": "#ca87ba"
+		},
+		{
+			"name": "wheat",
+			"value": "#f7deb2"
+		},
+		{
+			"name": "white",
+			"value": "#ffffff"
+		},
+		{
+			"name": "whitesmoke",
+			"value": "#f7f5f5"
+		},
+		{
+			"name": "yellow",
+			"value": "#f9ec00"
+		},
+		{
+			"name": "yellowgreen",
+			"value": "#9dc830"
+		}
+	]
+}

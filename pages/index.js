@@ -1,55 +1,58 @@
 // Libs
 import { colorsNamed } from 'culori';
-import { useState } from 'react';
-
-import psoCoated from '../data/pso-coated-v3-fogra51.json';
-import psoUncoated from '../data/pso-uncoated-v3-fogra52.json';
-import coatedFogra39 from '../data/iso-coated-v2-fogra39.json';
-import uncoatedFogra29 from '../data/iso-uncoated-fogra29.json';
-import adobeCoatedFogra39 from '../data/adobe-coated-fogra39.json';
-import adobeUncoatedFogra29 from '../data/adobe-uncoated-fogra29.json';
-import adobeUsWebCoated from '../data/adobe-us-web-coated-swop-v2.json';
-import adobeUsWebUncoated from '../data/adobe-us-web-uncoated-v2.json';
+import { useState, useEffect } from 'react';
 
 import Swatch from '../components/Swatch';
 
 import './index.css';
 
-const rgb = Object.keys(colorsNamed)
+const srgb = Object.keys(colorsNamed)
 	.sort()
 	.filter(c => !c.match(/grey/i))
-	.map(c => ({ converted: c }));
+	.map(c => ({ name: c, value: c }));
 
-const colormap = {
-	rgb,
-	psoCoated,
-	psoUncoated,
-	coatedFogra39,
-	adobeCoatedFogra39,
-	uncoatedFogra29,
-	adobeUncoatedFogra29,
-	adobeUsWebCoated,
-	adobeUsWebUncoated
-};
+import profiles from '../data/profiles.json';
+
+const options = [
+	{
+		id: 'srgb',
+		name: 'sRGB',
+		colors: srgb
+	}
+].concat(profiles);
 
 const Home = () => {
-	let [tab, setTab] = useState('rgb');
+	let [tab, setTab] = useState('srgb');
+	let [list, setList] = useState(srgb);
 
-	let list = colormap[tab];
+	useEffect(() => {
+		let profile = options.find(o => o.id === tab);
+		if (profile) {
+			if (!profile.colors) {
+				import(`../data/colors/${profile.id}.json`).then(module => {
+					let colors = module.default.colors;
+					profile.colors = colors;
+					setList(colors);
+				});
+			} else {
+				setList(profile.colors);
+			}
+		}
+	}, [tab]);
 
 	return (
 		<article>
-			<div>
-				{Object.keys(colormap).map(k => (
-					<button type="button" key={k} onClick={() => setTab(k)}>
-						{k}
-					</button>
+			<select value={tab} onChange={e => setTab(e.target.value)}>
+				{options.map(o => (
+					<option key={o.id} value={o.id}>
+						{o.name}
+					</option>
 				))}
-			</div>
+			</select>
 			<div className="swatches">
 				<div className="swatchlist">
-					{list.map(({ converted }, i) => (
-						<Swatch color={converted} key={i} />
+					{list.map(({ value }, i) => (
+						<Swatch color={value} key={i} />
 					))}
 				</div>
 			</div>
