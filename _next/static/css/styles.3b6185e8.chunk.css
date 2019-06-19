@@ -34,7 +34,8 @@
 }
 
 body {
-	font-family: -apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial,
+		sans-serif;
 	color: #333;
 	margin: 0;
 	padding: 0;
@@ -84,7 +85,13 @@ label {
 	display: block;
 }
 
-select, input {
+select {
+	/* safari only */
+	font-size: max(1em, 16px);
+}
+
+select,
+input {
 	vertical-align: middle;
 }
 
@@ -116,3 +123,4 @@ footer {
 		display: block;
 	}
 }
+
