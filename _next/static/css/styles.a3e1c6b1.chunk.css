@@ -149,6 +149,12 @@ footer hr {
 	margin: 2em 0;
 }
 
+blockquote {
+	border-left: 0.2em solid #eee;
+	margin-left: 0;
+	padding-left: 2em;
+}
+
 @media (max-width: 50em) {
 	.controls {
 		display: block;
