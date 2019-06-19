@@ -14,6 +14,7 @@
 	transition: background-color 0.2s;
 	margin: 0 auto 1em;
 	line-height: 1;
+	border: none;
 }
 
 .swatch__color:focus {
@@ -75,19 +76,11 @@ article {
 
 label {
 	font-weight: bold;
-}
-
-select {
-	border: 1px solid #ccc;
-	font-family: inherit;
-	padding: 0.5em;
-	font-size: 1em;
+	display: block;
 }
 
 select, input {
 	vertical-align: middle;
-	margin: 1em;
-	display: inline-block;
 }
 
 .swatchlist {
@@ -109,16 +102,8 @@ select, input {
 	flex-basis: var(--scale);
 }
 
-button {
-	appearance: none;
-	border: none;
-	padding: 1em;
-	line-height: 1;
-	font-family: inherit;
-	line-height: 1;
-	font-size: 1em;
-	background-color: rgb(51, 80, 145);
-	border-radius: 0.5em;
-	color: #fff;
+@media (max-width: 30em) {
+	.controls {
+		display: block;
+	}
 }
-
