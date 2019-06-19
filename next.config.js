@@ -19,7 +19,10 @@ const config = {
 		);
 		return defaultPathMap;
 	},
-	assetPrefix: process.env.NODE_ENV === 'production' ? `/${pkg.name}` : ''
+	assetPrefix:
+		process.env.NODE_ENV === 'production'
+			? `https://danburzo.github.io/${pkg.name}`
+			: ''
 };
 
 module.exports = withImages(withCSS(config));

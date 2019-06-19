@@ -31,6 +31,8 @@ const meta = {
 	title: 'CMYK Named Colors',
 	description: 'Named CSS colors, converted to CMYK and back to RGB.',
 	openGraph: {
+		title: 'CMYK Named Colors',
+		description: 'Named CSS colors, converted to CMYK and back to RGB.',
 		images: [{ title: '', url: require('../static/webcolors-cmyk.png') }]
 	},
 	twitter: {
@@ -97,6 +99,7 @@ const Home = () => {
 					<a
 						href={tab !== 'srgb' ? json_url(tab) : ''}
 						target="_blank"
+						rel="noopener"
 					>
 						&darr; JSON
 					</a>{' '}
@@ -104,6 +107,7 @@ const Home = () => {
 					<a
 						href={tab !== 'srgb' ? css_url(tab) : ''}
 						target="_blank"
+						rel="noopener"
 					>
 						&darr; CSS
 					</a>
