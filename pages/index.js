@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import NextSeo from 'next-seo';
 
 import Swatch from '../components/Swatch';
+import Footer from '../components/Footer.mdx';
 
 import './index.css';
 
@@ -78,14 +79,17 @@ const Home = () => {
 		<React.Fragment>
 			<NextSeo config={meta} />
 			<header>
-				<h1>CSS Named Colors, converted to CMYK and back</h1>
+				<h1>
+					CSS Named Colors, converted to CMYK and back.{' '}
+					<a href="#notes">Why?</a>
+				</h1>
 			</header>
 			<div className="controls">
 				<label>
 					Color profile:{' '}
 					<select
 						value={tab}
-						autocomplete="off"
+						autoComplete="off"
 						onChange={e => setTab(e.target.value)}
 					>
 						{options.map(o => (
@@ -142,13 +146,8 @@ const Home = () => {
 					))}
 				</ul>
 			</article>
-			<footer>
-				A thing by <a href="http://danburzo.ro">Dan Burzo</a>. Source
-				code available{' '}
-				<a href="https://github.com/danburzo/webcolors-cmyk">
-					on GitHub
-				</a>
-				.
+			<footer id="notes">
+				<Footer />
 			</footer>
 		</React.Fragment>
 	);

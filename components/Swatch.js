@@ -14,7 +14,7 @@ export default ({ name, color, compact, onClick }) => (
 		{!compact && (
 			<React.Fragment>
 				<code className="swatch__value">{color}</code>
-				<h3 className="swatch__name">{name}</h3>
+				<p className="swatch__name">{name}</p>
 			</React.Fragment>
 		)}
 	</li>

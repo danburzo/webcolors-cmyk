@@ -3,6 +3,7 @@ const { join } = require('path');
 const { promisify } = require('util');
 const withCSS = require('@zeit/next-css');
 const withImages = require('next-images');
+const withMDX = require('@next/mdx')();
 
 const pkg = require('./package.json');
 
@@ -25,4 +26,4 @@ const config = {
 			: ''
 };
 
-module.exports = withImages(withCSS(config));
+module.exports = withMDX(withImages(withCSS(config)));

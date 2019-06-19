@@ -4,6 +4,7 @@ body {
 	color: #333;
 	margin: 0;
 	padding: 0;
+	line-height: 1.5;
 }
 
 header {
@@ -88,7 +89,19 @@ input {
 }
 
 footer {
-	padding: 2em;
+	padding: 3em 2em;
+	max-width: 40em;
+}
+
+footer code {
+	font-size: 1.3em;
+}
+
+footer hr {
+	border: none;
+	height: 0.2em;
+	background-color: #eee;
+	margin: 2em 0;
 }
 
 @media (max-width: 50em) {
