@@ -52,16 +52,6 @@ body {
 	line-height: 1.5;
 }
 
-header {
-	padding: 1em 2em;
-	background: #000;
-	color: #fff;
-}
-
-header h1 {
-	font-size: 1.4em;
-}
-
 article {
 	padding: 2em;
 	transition: background-color 0.2s;
@@ -73,6 +63,21 @@ a {
 
 a[href=''] {
 	display: none;
+}
+
+
+header {
+	padding: 1em 2em;
+	background: #000;
+	color: #fff;
+}
+
+header h1 {
+	font-size: 1.4em;
+}
+
+header a {
+	color: #4982b4;
 }
 
 .main--light {
@@ -141,6 +146,7 @@ footer {
 footer code {
 	font-size: 1.3em;
 	word-break: break-all;
+	background: #f6f6f7;
 }
 
 footer hr {
