@@ -5,15 +5,12 @@
 	"repository": "https://github.com/danburzo/webcolors-cmyk.git",
 	"author": "Dan Burzo <danburzo@gmail.com>",
 	"license": "MIT",
-	"dependencies": {
+	"devDependencies": {
 		"@zeit/next-css": "^1.0.1",
 		"culori": "^0.10.1",
-		"ejs": "^2.5.7",
 		"next": "^8.1.0",
 		"react": "^16.8.6",
-		"react-dom": "^16.8.6"
-	},
-	"devDependencies": {
+		"react-dom": "^16.8.6",
 		"@mdx-js/loader": "^1.0.21",
 		"@next/mdx": "^8.1.0",
 		"fast-glob": "^3.0.1",
