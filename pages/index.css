@@ -7,16 +7,6 @@ body {
 	line-height: 1.5;
 }
 
-header {
-	padding: 1em 2em;
-	background: #000;
-	color: #fff;
-}
-
-header h1 {
-	font-size: 1.4em;
-}
-
 article {
 	padding: 2em;
 	transition: background-color 0.2s;
@@ -28,6 +18,20 @@ a {
 
 a[href=''] {
 	display: none;
+}
+
+header {
+	padding: 1em 2em;
+	background: #000;
+	color: #fff;
+}
+
+header h1 {
+	font-size: 1.4em;
+}
+
+header a {
+	color: #4982b4;
 }
 
 .main--light {
@@ -66,7 +70,7 @@ select {
 select,
 input {
 	vertical-align: middle;
-	width: 16em;
+	width: 14em;
 }
 
 .swatchlist {
@@ -95,6 +99,8 @@ footer {
 
 footer code {
 	font-size: 1.3em;
+	word-break: break-all;
+	background: #f6f6f7;
 }
 
 footer hr {
@@ -104,7 +110,17 @@ footer hr {
 	margin: 2em 0;
 }
 
+blockquote {
+	border-left: 0.2em solid #eee;
+	margin-left: 0;
+	padding-left: 2em;
+}
+
 @media (max-width: 50em) {
+	body {
+		scroll-padding: 3em;
+	}
+
 	.controls {
 		display: block;
 	}

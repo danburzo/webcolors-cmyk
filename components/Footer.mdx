@@ -6,9 +6,11 @@ A thing by [Dan Burzo](http://danburzo.ro). Source code available [on GitHub](ht
 
 ## Implementation notes
 
+> A thing I want to do for no reason is take the CSS named colors and convert them to CMYK & back. I have an intuition it might turn out cool. ([Aug 2017](https://twitter.com/danburzo/status/899404438544281604))
+
 CSS comes with [a handy set of named colors](https://drafts.csswg.org/css-color/#named-colors) you can use as keywords. Some of them are wonderful — the famous <TinySwatch color='tomato'/> <code>tomato</code>, wistful <TinySwatch color='lightseagreen'/> <code>lightseagreen</code>, or an understated <TinySwatch color='royalblue'/> <code>royalblue</code>. But then there's the eye-searing lot — I'm looking at you, <TinySwatch color='red'/> <TinySwatch color='green'/> <TinySwatch color='blue'/> <TinySwatch color='cyan'/> <TinySwatch color='magenta'/> <TinySwatch color='yellow'/>.
 
-What would be a good way of toning these colors down? Why not print them out! CMYK processes cannot represent all colors you can express in RGB and see on screens; in particular, very vibrant tones are impossible to achieve, especially on _uncoated_ (more porous) paper. So if we could simulate how these colors look on paper, maybe we can obtain a more pleasant set of colors to work with.
+What would be a good way of toning these colors down? Why not [dance the flip-flop](https://www.robinsloan.com/notes/flip-flop/) and print them out! CMYK processes cannot represent all colors you can express in RGB and see on screens; in particular, very vibrant tones are impossible to achieve, especially on _uncoated_ (porous) paper. So if we could simulate how these colors look on paper, maybe we can obtain a more pleasant set of colors to work with.
 
 To that end, I dug up the ICC profiles that come with Adobe Photoshop (on a Mac they're stored under <code>/Library/Application Support/Adobe/Color/Profiles/Recommended</code>), read their metadata with [icc](https://github.com/lovell/icc), and fed them to [LittleCMS](http://www.littlecms.com/) via a small [Node.js wrapper](https://github.com/danburzo/node-lcms). They served as the CMYK medium in the RGB → CMYK → RGB round-trip the full¹ set of named CSS colors went through. I've used the _Relative Colorimetric_ intent with _black point compensation_ to match the default settings in Adobe products, but one could experiment with the settings to other interesting effects.
 
