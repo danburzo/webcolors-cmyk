@@ -116,7 +116,7 @@ select {
 select,
 input {
 	vertical-align: middle;
-	width: 16em;
+	width: 14em;
 }
 
 .swatchlist {
@@ -163,6 +163,10 @@ blockquote {
 }
 
 @media (max-width: 50em) {
+	body {
+		scroll-padding: 3em;
+	}
+
 	.controls {
 		display: block;
 	}
