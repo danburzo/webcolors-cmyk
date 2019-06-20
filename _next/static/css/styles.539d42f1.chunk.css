@@ -140,6 +140,7 @@ footer {
 
 footer code {
 	font-size: 1.3em;
+	word-break: break-all;
 }
 
 footer hr {
